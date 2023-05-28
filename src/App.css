@@ -1,38 +1,113 @@
-.App {
-  text-align: center;
-}
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@100;400&display=swap');
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+body{
+  display: grid;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  background-color: hsl(216, 12%, 8%);
+  font-family: 'Overpass', sans-serif; 
+  min-height: 100vh;
+  align-items: center;
+}
+
+.App{
+  display: grid;
+  max-width: 23rem;
+  justify-content: center;
+}
+
+
+.main{
+  background-color: hsl(216, 12%, 8%);
+}
+
+ .Rating{
+  background-color: hsl(213, 19%, 18%);
+  border-radius: 5%;  
+  padding-bottom: 1rem;
+ }
+ 
+ .Thanks{
+  margin-top: 3rem;
+  background-color: hsl(213, 19%, 18%);
+  border-radius: 5%;
+  text-align: center;
+  padding-top: 2.5rem;
+  padding-bottom: 1rem;
+  
+ }
+ 
+ .attribution { font-size: 11px; text-align: center; }
+ .attribution a { color: hsl(228, 45%, 44%); }
+ 
+   
+ .how{
+
+   padding: 0rem 0rem 0rem 1rem
+ }
+ h1{
+     color: hsl(0, 0%, 100%);
+     font-size: 25px;
+ }
+ h2{
+     color: hsl(217, 12%, 63%);
+     font-weight: 400;
+     font-size: 15px;
+     padding: 0rem 1rem 0rem 1rem;
+
+ }
+
+ .result{
+  color: orange;
+  font-size: 15px;
+ }
+ 
+ .numbers{
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  margin: 0rem 1.5rem 0rem 1.5rem;
+ }
+
+ .styled-numbers{
+  max-width: 3rem;
+  min-height: 3rem;
+  background-color: rgb(56, 63, 69);
+  border-radius: 100%;
+  border: 1px;
   color: white;
+  font-family: 'Overpass', sans-serif; 
+  font-size: 1rem; 
+margin-left: 0.4rem;
 }
 
-.App-link {
-  color: #61dafb;
+.styled-numbers:focus{
+  background-color: orange;
+}
+.styled-numbers:hover{
+  background-color: hsl(216, 12%, 54%)
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.submit-button{
+  padding: 0rem 8rem 0rem 8rem;
+  margin: 0.5rem 0rem 1rem 1.7rem;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 20px;
+  max-width:100%;
+  min-height: 2.5rem; 
+  border: 1px;
+  color: orange; 
+  font-family: 'Overpass', sans-serif;  
+  font-size: 0.9rem;
+
+}
+.IconStar{
+display:grid;
+align-content: center;
+justify-content: center;
+
+
+margin: 1rem;
+background-color: rgb(76, 82, 108);
+max-width: 2.2rem;
+min-height: 2.2rem;
+border-radius: 100%;
 }
