@@ -77,12 +77,15 @@ body{
   font-family: 'Overpass', sans-serif; 
   font-size: 1rem; 
 margin-left: 0.4rem;
+   cursor: pointer;
 }
 
 .styled-numbers:focus{
+     cursor: pointer;
   background-color: orange;
 }
 .styled-numbers:hover{
+     cursor: pointer;
   background-color: hsl(216, 12%, 54%)
 }
 
@@ -97,8 +100,15 @@ margin-left: 0.4rem;
   color: orange; 
   font-family: 'Overpass', sans-serif;  
   font-size: 0.9rem;
-
+  cursor: pointer;
 }
+
+.submit-button:hover{
+background-color: orange;
+color: white;
+}
+
+
 .IconStar{
 display:grid;
 align-content: center;
